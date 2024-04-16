@@ -1,0 +1,16 @@
+<div class="container">
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#respuesta" aria-expanded="false" aria-controls="respuesta">
+        Ver respuesta
+    </button>
+    <div class="collapse" id="respuesta">
+        {{#if description}}
+        <div class="card card-body">
+            {{description}}
+        </div>
+        {{else}}
+        <div class="card card-body">
+            No hay descripción disponible.
+        </div>
+        {{/if}}
+    </div>
+</div>
